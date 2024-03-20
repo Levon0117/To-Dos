@@ -1,0 +1,35 @@
+.Edit {
+  width: min(70%, 600px);
+  margin: 16px auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #111;
+  h1{
+    text-align: center;
+  }
+  form {
+    width: 90%;
+    padding: 10px;
+    font-size: 20px;
+    input, textarea{
+      width: 95%;
+      padding: 1em 0.6em;
+      border-radius: 6px;
+      margin-bottom: 6px;
+      border: 1px solid grey;
+      &[type = "submit"]{
+        background-color: teal;
+        color: white;
+        cursor: pointer;
+        width: 200px;
+        font-size: 15px;
+    }
+    }
+  }
+}
+label{
+  font-family: sans-serif;
+}

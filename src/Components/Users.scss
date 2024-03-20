@@ -1,0 +1,49 @@
+.Users {
+  max-height: 800px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 0;
+  &-item {
+    padding: 1em;
+    border-left: 2px solid grey;
+    cursor: pointer;
+    transition: transform 0.3s;
+    width: 95%;
+    margin-bottom: 12px;
+    &:hover {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      transform: translateY(-4px);
+    }
+    &_active {
+      background: rgb(34, 193, 195);
+      background: linear-gradient(90deg, rgb(34, 193, 195, 1) 0%, rgb(222, 222, 222, 1) 100%);
+      border-left: 8px solid rgb(29, 21, 20);
+      transition: all 0.3s;
+    }
+  }
+  &-title {
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
+  &-description {
+    margin: 10px 0;
+    text-indent: 14px;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  &-delete, a {
+    background-color: rgb(249, 22, 60);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 3px;
+  }
+}

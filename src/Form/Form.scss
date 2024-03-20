@@ -1,0 +1,44 @@
+.Form {
+  width: min(70%, 600px);
+  padding: 1em;
+  margin: 16px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #111;
+  h2{
+    color: teal;
+    font-family: sans-serif;
+  }
+  form {
+    width: 90%;
+    padding: 10px;
+    font-size: 20px;
+    div {
+      label {
+          display: block;
+          margin-bottom: 4px;
+          font-family: sans-serif;
+      }
+      input, textarea {
+        width: 95%;
+        padding: 1em 0.6em;
+        border-radius: 6px;
+        margin-bottom: 6px;
+        border: 1px solid grey;
+        &[type = "submit"]{
+          background-color: teal;
+          color: white;
+          cursor: pointer;
+          width: 200px;
+          font-size: 15px;;
+        }
+      }
+      textarea {
+         resize: none;
+        font-size: 16px;
+      }
+    }
+  }
+}

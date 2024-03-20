@@ -1,0 +1,28 @@
+.App {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+  align-items: flex-start;
+  gap: 20px;
+  line-height: 1.6;
+  header {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      padding: 10px 30px 10px 0;
+      border-bottom: 2px solid #eee;
+      h1 {
+          font-size: 40px;
+          font-weight: 200;
+          font-family: sans-serif;
+          color: teal;
+      }
+  }
+}
+h1{
+  color: teal;
+  font-family: sans-serif;
+}
